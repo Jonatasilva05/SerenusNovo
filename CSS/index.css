@@ -33,11 +33,14 @@
     background: #003a92;
 }
 
+body {
+    background: #36015D;
+}
+
 main {
     background: linear-gradient(to bottom, #36015D, #A060CE);
 }
 
 .hide-on-scroll {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    transform: translateX(-150%);
 }
