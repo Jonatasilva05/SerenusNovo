@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body {
+    background: #36015D;
+}
+
+.hide-on-scroll {
+    transform: translateX(-150%);
+}
+
 .navbar.navbar.fixed-top,
 .offcanvas.offcanvas-end.text {
     background: #36015D; /*COR DE ANTES #050A30*/
@@ -40,59 +48,27 @@
     background: #003a92;
 }
 
-body {
-    background: #36015D;
-}
-
 main {
     background: linear-gradient(to bottom, #36015D, #A060CE);
     color: #fff;
 }
 
-.hide-on-scroll {
-    transform: translateX(-150%);
+#containerTextCenterOne {
+    padding-bottom: 50px;
 }
 
-.textMain-container{
+#containerTextCenterOne .row .col .textMain-container{
     text-align: left;
     font-size: 3vw;
 }
 
-.textMain-containerP {
+#containerTextCenterOne .row .col .textMain-containerP {
     text-align: left;
     font-size: 2vw;
     padding-bottom: 30px;
 }
 
-.container.text-center .row .col .imgZoe {
-    height: 250px;
-}
-
-/*
-section {
-    background: #FFF; 
-    color: black;
-}
-*/
-
-section h1 {
-    text-align: center;
-}
-
-section img {
-    margin: 0 auto;..
-    height: 100px;
-}    
-
-#containerTextCenterOne {
-    padding-bottom: 50px;
-}
-
-#containerTextCenterSecond {
-    padding-top: 20px;
-}
-
-.saibaMais {
+#containerTextCenterOne .row .col .textMain-containerP .saibaMais {
     margin-top: 20px;
     color: #fff;
     background: #36015D;
@@ -103,27 +79,140 @@ section img {
     font-family: serif;
 }
 
-#cardInformationOne,
-#cardInformationSecond,
-#cardInformationThree {
-    color: #fff;
-    background: #36015D;
+#containerTextCenterOne .row .col .imgZoe {
+    height: 250px;
 }
-.card-img-top{
-    filter: brightness(0) invert(1);
-    height: 100px;
-}
-.card {
+
+#containerTextCenterOne .row .col .card {
     border-radius: 60px;
     height: 350px;
 }
-.card .card-title {
+
+#containerTextCenterOne .row .col #cardInformationOne,
+#containerTextCenterOne .row .col #cardInformationSecond,
+#containerTextCenterOne .row .col #cardInformationThree {
+    color: #fff;
+    background: #36015D;
+}
+
+#containerTextCenterOne .row .col #cardInformationOne .card-img-top,
+#containerTextCenterOne .row .col #cardInformationSecond .card-img-top,
+#containerTextCenterOne .row .col #cardInformationThree .card-img-top {
+    filter: brightness(0) invert(1);
+    height: 100px;
+}
+
+#containerTextCenterOne .row .col .card .card-title {
     font-weight: bold;
     font-size: 28px; 
 }
-.card .card-text {
+
+#containerTextCenterOne .row .col .card .card-text {
+    text-align: justify;
+    font-size: 18px;
+}
+
+section #containerTextCenterSecond {
+    padding-top: 20px;
+}
+
+section #containerTextCenterSecond .row.justify-content-md-center .col.col-lg-2 .col-md-auto h1 {
+    text-align: center;
+}
+
+section #containerTextCenterSecond .row.justify-content-md-center .col.col-lg-2 .col-md-auto h1:hover {
+    font-style: italic;
+    border-bottom: 3px solid black;
+}
+   
+section #containerTextCenterSecond .row.justify-content-md-center .col-md-auto .imageLogoPreta {
+    height: 150px;
+    animation: logoAumentaAuto 5s infinite;
+}
+    
+@keyframes logoAumentaAuto {
+    0%, 100% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+}
+
+section:nth-of-type(1) {
+    background-image: url('../IMG/body1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background-attachment: fixed;*/
+    color: black;
+    height: 900px;
+    width: 100%;
+}
+
+section:nth-of-type(2) {
+    background-image: url('../IMG/body2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background-attachment: fixed;*/
+    color: #000;
+    height: 900px;
+    width: 100%;
+}
+
+#containerTextCenterThree .row .col .imageMulherTexto,
+#containerTextCenterThree .row .col .imagemHomemTexto {
+    height: 400px;
+}
+
+#containerTextCenterThree .row .col .textoPosImagem {
+    font-size: 22px;
+    font-weight: 700;
+    word-spacing: 15px;
     text-align: justify;
 }
-.card .card-text {
-    font-size: 18px;
+
+#containerTextCenterThree .row #colText1,
+#containerTextCenterThree .row #colText2 {
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/*
+.bolMainPeque {
+background: #A060CE;
+height: 100px;
+width: 100px;
+position: relative;
+left: 160%;
+border-radius: 50%;
+}
+*/
+
+
+
+.spaceHeaderMain {
+    background: transparent;
+    height: 150px;
+    width: 100%;
+}
+.spaceParaRowDoContainer2e3,
+.spaceParaContainer2e3 {
+    background: transparent;
+    height: 10px;
+    width: 100%;
+}
+.spaceEntre2Row {
+    background: transparent;
+    height: 70px;
+    width: 100%;
+}
+.spaceSections {
+    height: 80px;
+    background: #fff;
 }
