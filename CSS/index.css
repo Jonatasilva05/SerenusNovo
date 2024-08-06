@@ -18,7 +18,12 @@ body {
 }
 
 .navbar-toggler{
+    margin-right: 70px;
+    border-radius: 10px;
+    height: 60px;
+    width: 70px;
     background: #fff;
+    font-size: 1.7rem;
 }
 
 .navbar.navbar.fixed-top,
@@ -77,6 +82,7 @@ main {
     width: 250px;
     border-radius: 30px;
     font-family: serif;
+    border: none;
 }
 
 #containerTextCenterOne .row .col .imgZoe {
@@ -102,7 +108,7 @@ main {
     height: 100px;
 }
 
-#containerTextCenterOne .row .col .card .card-title {
+#containerTextCenterOne .row .col .cardMain .card-title {
     font-weight: bold;
     font-size: 28px; 
 }
@@ -391,7 +397,7 @@ section .circleGrande3 {
     border-radius: 100%;
     border: 8px solid #A060CE;
     color: #fff;
-    font-size: 8vw;
+    font-size: 5vw;
     background: #8346AF;
     display: flex;
     justify-content: center;
@@ -453,6 +459,16 @@ footer {
     background: #561E7F;
     color: #fff;
 }
+
+#colFooter {
+    margin-top: 20px;
+}
+
+#menuFooter,
+#contatoFooter {
+    margin-top: 30px;
+}
+
 #colFooter img {
     height: 100px;
     display: flex;
@@ -517,11 +533,29 @@ footer {
     display: inline-flex;
     grid-gap: 60px;
 }
+
 .ahrefIcons img {
     height: 30px;
+    transition: 200ms ease-in-out;
 }
+
+.imagemIcon {
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+  
+.ahrefIcons:hover .imagemIcon {
+    filter: blur(5px);
+}
+  
+.ahrefIcons .imagemIcon:hover {
+    filter: none;
+    transform: scale(1.5);
+    transition: 200ms ease-in-out;
+}
+
 #cardTextSecondFooter p {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px;
 }

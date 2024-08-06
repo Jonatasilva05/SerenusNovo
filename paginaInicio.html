@@ -1,24 +1,78 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!--CSS BOODSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--CSS BOODSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./CSS/index.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="./CSS/index.css">
 
-    <!--IMAGEM NA ABA DO NAVEGADOR-->
-    <link rel="icon" href="./IMG/SerenusLetra.ico" type="image/x-icon">
+  <!--IMAGEM NA ABA DO NAVEGADOR-->
+  <link rel="icon" href="./IMG/SerenusLetra.ico" type="image/x-icon">
 
-    <!--TITULO-->
-    <title>Serenus Group</title>
-    
-    <style>
-        
-    </style>
+  <!--TITULO-->
+  <title>Serenus Group</title>
+  
+  <style>
+#rowCards .cardMain {
+  height: 350px;
+  width: 200px;
+  background: rgb(103, 225, 255);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#rowCards .cardMain:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+#rowCards .cardMain:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  transform: scale(1.3);
+  transform: rotate(90deg) scale(-1);
+}
+
+#rowCards .cardMain:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+  </style>
 
 </head>
 <body>
@@ -86,15 +140,24 @@
         </div>
       </div>
 
-      <div class="row" id="rowCards">
+      <!-- ORIGINAL <div class="row" id="rowCards">
         <div class="col">
           <div class="card" id="cardInformationOne" style="width: 18rem;">
             <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
             <div class="card-body">
                 <h5 class="card-title">Se Ajudar</h5>
                 <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
-                <!--<a href="#" class="btn btn-primary">VAMOS LÁ</a>-->
+                ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
             </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="first-content">
+            <span>First</span>
+          </div>
+          <div class="second-content">
+            <span>Second</span>
           </div>
         </div>
 
@@ -104,7 +167,7 @@
             <div class="card-body">
                 <h5 class="card-title">Informações e Artigos Educativos</h5>
                 <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
-                <!--<a href="#" class="btn btn-primary">VAMOS LÁ</a>-->
+                ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
             </div>
           </div>
         </div>
@@ -115,11 +178,71 @@
             <div class="card-body">
                 <h5 class="card-title">Recursos de auto ajuda</h5>
                 <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
-                <!--<a href="#" class="btn btn-primary">VAMOS LÁ</a>-->
+                ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
             </div>
           </div>
         </div>
+      </div> -->
+
+    <!--MODIFICADO-->
+      <div class="row" id="rowCards">
+        <div class="col">
+          <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+            <div class="first-content">
+              <span>
+                <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                <h5 class="card-title">Se Ajudar</h5>
+              </span>
+            </div>
+            <div class="second-content">
+              <span>
+                <div class="card-body">
+                  <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+                </div>
+              </span>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+            <div class="first-content">
+              <span>
+                <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                <h5 class="card-title">Informações e Artigos Educativos</h5>
+              </span>
+            </div>
+            <div class="second-content">
+              <span>
+                <div class="card-body">
+                  <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+            <div class="first-content">
+              <span>
+                <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+                <h5 class="card-title">Recursos de auto ajuda</h5>
+              </span>
+            </div>
+            <div class="second-content">
+              <span>
+                <div class="card-body">
+                  <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
 
     <section>
@@ -465,10 +588,10 @@
     <div class="card text-center" id="cardTextSecondFooter">
       <div class="card-footer text-body-secondary">
         <a href="#" class="ahrefIcons">
-          <img src="./IMG/whatsapp.png" alt="icone do whatsapp">
-          <img src="./IMG/linkedin.png" alt="icone do linkedin">
-          <img src="./IMG/instagram.png" alt="icone do instagram">
-          <img src="./IMG/github.png" alt="icone do github">
+          <img src="./IMG/whatsapp.png" alt="icone do whatsapp" class="imagemIcon">
+          <img src="./IMG/linkedin.png" alt="icone do linkedin" class="imagemIcon">
+          <img src="./IMG/instagram.png" alt="icone do instagram" class="imagemIcon">
+          <img src="./IMG/github.png" alt="icone do github" class="imagemIcon">
         </a>
           <p>Copyright© 2023 - Fatec Taquaritinga</p>
       </div>
