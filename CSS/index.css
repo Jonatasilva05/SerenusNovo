@@ -368,3 +368,160 @@ section .circleGrande3 {
     font-size: 25px;
     font-weight: 500;
 }
+
+#sectionSecond {            
+
+}
+#sectionSecond .cardInfoSection {
+    background: #DEDCDC;
+    position: relative;
+    z-index: 1000;
+    border-radius: 50px;
+}
+#sectionSecond .cardInfoSection .titleCardInfo {
+    padding-top: 20px;
+}
+#sectionSecond .cardInfoSection .titleCardInfo h2 {
+    font-weight: bold;
+    padding: 20px 0px;
+}
+#sectionSecond .cardInfoSection .bolNumber {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 8px solid #A060CE;
+    color: #fff;
+    font-size: 8vw;
+    background: #8346AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionSecond .cardInfoSection #autoFisico,
+#sectionSecond .cardInfoSection #autoEmocio,
+#sectionSecond .cardInfoSection #autoSocial,
+#sectionSecond .cardInfoSection #autoMental,
+#sectionSecond .cardInfoSection #autoEspirit,
+#sectionSecond .cardInfoSection #autoProfiss,
+#sectionSecond .cardInfoSection #autoLudico {
+    width: 50%;
+}
+#sectionSecond .cardInfoSection #autoFisico h3,
+#sectionSecond .cardInfoSection #autoEmocio h3,
+#sectionSecond .cardInfoSection #autoSocial h3,
+#sectionSecond .cardInfoSection #autoMental h3,
+#sectionSecond .cardInfoSection #autoEspirit h3,
+#sectionSecond .cardInfoSection #autoProfiss h3,
+#sectionSecond .cardInfoSection #autoLudico h3 {
+    text-align: left;
+    font-weight: bold;
+}
+#sectionSecond .cardInfoSection #autoFisico ul>li, 
+#sectionSecond .cardInfoSection #autoEmocio ul>li,
+#sectionSecond .cardInfoSection #autoSocial ul>li,
+#sectionSecond .cardInfoSection #autoMental ul>li,
+#sectionSecond .cardInfoSection #autoEspirit ul>li,
+#sectionSecond .cardInfoSection #autoProfiss ul>li,
+#sectionSecond .cardInfoSection #autoLudico ul>li {
+    font-size: 22px;
+} 
+#sectionSecond .cardInfoSection #autoFisico span,
+#sectionSecond .cardInfoSection #autoEmocio span,
+#sectionSecond .cardInfoSection #autoSocial span,
+#sectionSecond .cardInfoSection #autoMental span,
+#sectionSecond .cardInfoSection #autoEspirit span,
+#sectionSecond .cardInfoSection #autoProfiss span,
+#sectionSecond .cardInfoSection #autoLudico span {
+    font-weight: bold;
+}
+#rowInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spacePonti {
+    border-top: 3px dotted #36015D;
+    width: 60%;
+    background: transparent;
+}
+.spaceSectionFooter {
+    height: 300px;
+    background: #fff;
+}
+
+footer {
+    background: #561E7F;
+    color: #fff;
+}
+#colFooter img {
+    height: 100px;
+    display: flex;
+}
+.footerP {
+    text-align: left;
+}
+#menuFooter {
+    text-align: justify;    
+}
+#menuFooter a {
+    text-decoration: none;
+    color: #fff;
+}
+.spaceAdoFooter {
+    height: 15px;
+    background: transparent;
+}
+#contatoFooter h4 {
+    text-align: left;
+}
+#contatoFooter label,
+#contatoFooter input {
+    height: 50px;            
+}
+#contatoFooter label {
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 80px;
+    background: #36015D;
+}
+#contatoFooter input {
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#contatoFooter label img {
+    height: 50px;
+}
+.enviarMsg {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container.text-center #sobreCol1Footer,
+.container.text-center #sobreCol2Footer,
+.container.text-center #sobreCol3Footer,
+.container.text-center #sobreCol4Footer {
+    text-align: left;
+}
+#cardTextPrimaryFooter {
+    background: #561E7F;
+    color: #fff;
+}
+#cardTextSecondFooter {
+    background: #36015D;
+}
+.ahrefIcons {
+    margin-top: 20px;
+    display: inline-flex;
+    grid-gap: 60px;
+}
+.ahrefIcons img {
+    height: 30px;
+}
+#cardTextSecondFooter p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
