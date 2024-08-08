@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--CSS BOODSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./CSS/indexcopy.css">
+
+  <!--IMAGEM NA ABA DO NAVEGADOR-->
+  <link rel="icon" href="./IMG/SerenusLetra.ico" type="image/x-icon">
+
+  <!--TITULO-->
+  <title>Serenus Group</title>
+  
+  <style>
+    .spaceHeaderMain {
+      height: 175px;
+      background: #36015D;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        background: red;
+      }
+      #main-header .navbar.navbar.fixed-top {
+        background: #36015D;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .navbar-brand img {
+        height: 140px;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .navbar-toggler {
+        background: #fff;
+      }
+      .offcanvas.offcanvas-end.text {
+        background: #36015D;       /*COR DE ANTES #050A30*/
+      }
+      .dropdown-menu.dropdown-menu {
+        background: #fff;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid #offcanvasDarkNavbarLabel img {
+        height: 140px;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-header .btn-close {
+        font-size: 30px;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link,
+      #main-header .navbar.navbar.fixed-top .container-fluid .offcanvas-body .nav-link.dropdown-toggle {
+        font-size: 25px;
+        color: #fff;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .dropdown-item {
+        font-size: 20px;
+      }
+      #main-header .navbar.navbar.fixed-top .container-fluid .d-flex.mt-3 .btn.btn-success {
+        padding: 15px;
+        font-size: 18px;
+      }
+
+      /***MAIN***/
+      #main-body {
+        background: #36015D;
+      }
+      #main-body #containerTextCenterOne .row .col {
+        color: #fff;
+      }
+      #main-body #containerTextCenterOne .row .col .quebraLinha {
+
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<header id="main-header"> 
+    <nav class="navbar navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/serenus.png" alt="Logo do Serenus">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img src="./IMG/serenus.png" alt="Logo da Serenus">
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Exercicios</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mais Opções
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sobre o Serenus</a></li>
+                    <li><a class="dropdown-item" href="#">Profissionais</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Avaliações e Ajudas</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Psicologo..." aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>     
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+</header>   
+
+<div class="spaceHeaderMain"></div>
+
+<main id="main-body">
+  <div class="container text-center" id="containerTextCenterOne">
+    <div class="row">
+      <div class="col">
+        <h3 class="textMain-container">Serenus</h3>
+          <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinha"> Mente, Transformando <br class="quebraLinha"> Vidas.
+          <br>
+            <button class="saibaMais">Saiba mais</button>
+          </p>
+      </div>
+      <div class="col">
+        <img class="imgZoe" src="./IMG/zoe.png" alt="imagem da Zoe, a mascote do Serenus">
+      </div>
+    </div>
+
+    <!-- ORIGINAL <div class="row" id="rowCards">
+      <div class="col">
+        <div class="card" id="cardInformationOne" style="width: 18rem;">
+          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+          <div class="card-body">
+              <h5 class="card-title">Se Ajudar</h5>
+              <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="first-content">
+          <span>First</span>
+        </div>
+        <div class="second-content">
+          <span>Second</span>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" id="cardInformationSecond" style="width: 18rem;">
+          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+          <div class="card-body">
+              <h5 class="card-title">Informações e Artigos Educativos</h5>
+              <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" id="cardInformationThree" style="width: 18rem;">
+          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+          <div class="card-body">
+              <h5 class="card-title">Recursos de auto ajuda</h5>
+              <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
+              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!--MODIFICADO-->
+    <!-- <div class="row" id="rowCards">
+      <div class="col">
+        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Se Ajudar</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+              </div>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Informações e Artigos Educativos</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Recursos de auto ajuda</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</main>
+
+</body>
+  <!--JAVASCRIPT-->
+  <script src="./JAVASCRIPT/script.js"></script>
+
+  <!--JAVASCRIPT BOODSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
