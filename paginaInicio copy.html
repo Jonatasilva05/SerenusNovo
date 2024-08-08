@@ -17,6 +17,9 @@
   <title>Serenus Group</title>
   
   <style>
+    .col .card {
+      width: 18rem;
+    }
     .spaceHeaderMain {
       height: 175px;
       background: #36015D;
@@ -24,7 +27,7 @@
 
     @media (max-width: 700px) {
       body {
-        background: red;
+       
       }
       #main-header .navbar.navbar.fixed-top {
         background: #36015D;
@@ -61,14 +64,116 @@
       }
 
       /***MAIN***/
-      #main-body {
-        background: #36015D;
+      #main-body #containerTextCenterOne {
+        background: linear-gradient(to bottom, #36015D 5%, #561E7F 60%, #8346AF 85%, #A060CE 100%);
       }
       #main-body #containerTextCenterOne .row .col {
         color: #fff;
       }
       #main-body #containerTextCenterOne .row .col .quebraLinha {
+        
+      }
+      #main-body #containerTextCenterOne .row .col .quebraLinhaNone {
+        display: none;
+      }
+      #main-body #containerTextCenterOne .row #divImgZoetwo img {
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      #main-body #containerTextCenterOne .row .col .textMain-container {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-family: Montserrat;
+        font-weight: bolder;
+      }
+      #main-body #containerTextCenterOne .row .col .textMain-containerP {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: Montserrat;
+      }
+      #main-body #containerTextCenterOne .row .col .textMain-containerP .saibaMais {
+        margin: 15px 0;
+        border: none;
+        color: #fff;
+        background: #561E7F;
+        padding: 15px;
+        width: 161px;
+        border-radius: 30px;
+        font-family: Montserrat;
+      }
+      #main-body #containerTextCenterOne #rowCardsModify {
+        display: none;
+      }
+      .spaceTextImg {
 
+      }
+      .col .card{
+        width: 100px;
+      }
+      .spaceEntreCards {
+        display: none;
+      }
+      @media (max-width:450px) {
+        .spaceEntreCards {
+          display: block;
+          height: 100px;
+          background: transparent;
+        }
+        .col #cardInformationOne,
+        .col #cardInformationSecond {
+          margin: 0 auto;
+          width: 80%;
+          border-radius: 35px;
+        }
+        .col #cardInformationOne h5,
+        .col #cardInformationSecond h5 {
+          font-weight: bolder;
+          font-size: 35px;
+        }
+        .col #cardInformationOne p,
+        .col #cardInformationSecond p {
+          font-size: 25px;
+        }
+        .col #cardInformationOne img,
+        .col #cardInformationSecond img {
+          margin-top: 15px;
+          height: 100px;
+          animation: animaImg 4s ease infinite;
+        }
+        @keyframes animaImg {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50%{
+            transform: scale(1.3);
+          }
+        }
+        .spaceMeioCard {
+          height: 80px;
+          background: transparent;
+        }
+        section #containerTextCenterSecond #titleInfoMain {
+          font-family: Montserrat;
+          margin-top: 50px;
+        }
+        section #containerTextCenterSecond  #imgLogoSerenusColTwo img {
+          height: 150px;
+          animation: animaImgLogoTwo 5.5s ease infinite;
+        }
+        @keyframes animaImgLogoTwo {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.6);
+          }
+        }
+        .circleMedio1,
+        .spaceParaRowDoContainer2e3,
+        .circleGrande1,
+        .spaceParaContainer2e3 {
+          display: none;
+        }
       }
     }
   </style>
@@ -131,62 +236,44 @@
     <div class="row">
       <div class="col">
         <h3 class="textMain-container">Serenus</h3>
-          <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinha"> Mente, Transformando <br class="quebraLinha"> Vidas.
+          <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinhaNone"> Mente, <br class="quebraLinhaNone"></br> Transformando <br class="quebraLinhaNone"> Vidas.
           <br>
             <button class="saibaMais">Saiba mais</button>
           </p>
       </div>
-      <div class="col">
+      <div class="spaceTextImg"></div>
+      <div class="col" id="divImgZoetwo">
         <img class="imgZoe" src="./IMG/zoe.png" alt="imagem da Zoe, a mascote do Serenus">
       </div>
     </div>
 
-    <!-- ORIGINAL <div class="row" id="rowCards">
+    <!--ORIGINAL-->
+    <div class="row" id="rowCards">
       <div class="col">
-        <div class="card" id="cardInformationOne" style="width: 18rem;">
+        <div class="card" id="cardInformationOne">
           <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
           <div class="card-body">
               <h5 class="card-title">Se Ajudar</h5>
               <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
-              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="first-content">
-          <span>First</span>
-        </div>
-        <div class="second-content">
-          <span>Second</span>
-        </div>
-      </div>
+      <div class="spaceEntreCards"></div>
 
       <div class="col">
-        <div class="card" id="cardInformationSecond" style="width: 18rem;">
+        <div class="card" id="cardInformationSecond">
           <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
           <div class="card-body">
               <h5 class="card-title">Informações e Artigos Educativos</h5>
               <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
-              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col">
-        <div class="card" id="cardInformationThree" style="width: 18rem;">
-          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-          <div class="card-body">
-              <h5 class="card-title">Recursos de auto ajuda</h5>
-              <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
-              ---TIRAR<a href="#" class="btn btn-primary">VAMOS LÁ</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <!--MODIFICADO-->
-    <!-- <div class="row" id="rowCards">
+    <!--MODIFICADO-->
+    <div class="row" id="rowCardsModify">
       <div class="col">
         <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
           <div class="first-content">
@@ -241,8 +328,134 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <div class="spaceMeioCard"></div>
   </div>
+
+  <section>
+    <div class="container text-center" id="containerTextCenterSecond">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="titleInfoMain">
+          <h1>Informações Sobre a Saúde Mental</h1> 
+        </div>
+        <div class="col col-lg-2"></div>
+      </div>
+        
+        <div class="circleMedio1"></div>
+
+        <div class="spaceParaRowDoContainer2e3"></div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="imgLogoSerenusColTwo">
+          <img class="imageLogoPreta" src="./IMG/Logopreta.png" alt="LOGO DO SITE SERENUS DE COR PRETA"> 
+        </div>
+        <div class="col col-lg-2"></div>
+      </div>
+    </div>
+    
+        <div class="circleGrande1"></div>
+
+        <div class="spaceParaContainer2e3"></div>
+
+    <div class="container text-center" id="containerTextCenterThree">
+      <div class="row">
+        <div class="col">
+          <img class="imageMulherTexto" src="./IMG/mulher1.png" alt="imagem de uma mulher sorrindo">
+        </div>
+          
+        <div class="col" id="colText1">
+          <p class="textoPosImagem">A saúde mental é crucial para o bem-estar geral, influenciando pensamentos, sentimentos e ações. Afeta como lidamos com o estresse, nos relacionamos e tomamos decisões. Para uma vida equilibrada, é importante dormir bem, alimentar-se adequadamente, exercitar-se e manter bons relacionamentos. Buscar apoio profissional é essencial para tratar transtornos mentais e melhorar a qualidade de vida.</p>
+        </div>
+      </div>
+        
+        <div class="circleGrande2"></div>
+        
+        <div class="spaceEntre2Row"></div>
+
+      <div class="row">
+        <div class="col" id="colText2">
+          <p class="textoPosImagem">Cuidar de si mesmo é essencial para a saúde e o bem-estar. Priorizando o autocuidado, ganhamos energia e resiliência para enfrentar desafios e prevenir doenças físicas e mentais. Práticas simples, como alimentação balanceada, exercícios, sono adequado e relaxamento, fazem grande diferença. Reservar tempo para atividades que trazem alegria melhora a qualidade de vida e nos prepara para ajudar os outros.</p>
+        </div>
+          
+        <div class="col">
+          <img class="imagemHomemTexto" src="./IMG/homem.png" alt="imagem de uma mulher sorrindo">
+        </div>
+      </div>
+    </div>
+    
+        <div class="circleMedio2"></div>
+    
+        <div class="spaceParaContainer4e5"></div>
+    
+    <div class="container text-center" id="containerTextCenterFour">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto">
+          <h1>Problemas Mentais Mais Comuns no Mundo</h1> 
+        </div>
+        <div class="col col-lg-2"></div>
+      </div>
+
+        <div class="circleMedio3"></div>
+        
+        <div class="spaceParaRowDoContainer2e3"></div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto">
+            <p>A depressão e os transtornos de ansiedade estão entre os distúrbios mentais mais frequentes globalmente. Apesar de serem menos prevalentes, o Transtorno Obsessivo-Compulsivo (TOC), distúrbios alimentares como a anorexia, além do transtorno bipolar e a esquizofrenia, também são condições significativas que afetam a saúde mental.
+            </p>
+            
+            <p>Esses transtornos manifestam uma variedade de sintomas, emoções, pensamentos e comportamentos que exigem atenção. O diagnóstico e tratamento adequados são essenciais para melhorar a qualidade de vida dos pacientes.
+            </p>
+            
+            <p>Além disso, esses transtornos podem piorar com o tempo se não forem tratados e acompanhados. É fundamental estar atento aos seguintes sinais e sintomas:
+            </p>
+            
+            <ul>
+                <li>
+                    Tristeza persistente;
+                </li>
+                <li>
+                    Perda de interesse em atividades prazerosas;
+                </li>
+                <li>
+                    Dificuldade de concentração;
+                </li>
+                <li>
+                     Cansaço extremo e falta de vontade para realizar atividades básicas, como higiene pessoal
+                </li>
+                <li>
+                     Alterações no sono e no apetite
+                </li>
+                <li>
+                    Sensação constante de medo e agitação, com a impressão de que algo ruim está prestes a acontecer
+                </li>
+                <li>
+                    Sobrecarga emocional que desestabiliza a pessoa
+                </li>
+                <li>
+                    Dependência química e alcoólica
+                </li>
+            </ul>
+            <p>
+                Atentar-se às suas necessidades e limites, buscando ajuda para promover o bem-estar emocional, é de extrema importância.
+            </p>
+        </div>
+        <div class="col col-lg-2"></div>
+      </div>
+    </div>
+    
+        <div class="circleMedio4"></div>
+    
+        <div class="circleGrande3"></div>
+    
+        <div class="spaceParaContainer5e6"></div>
+    
+  </section>
 </main>
 
 </body>
