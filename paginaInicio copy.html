@@ -114,28 +114,28 @@
         display: none;
       }
       @media (max-width:450px) {
-        .spaceEntreCards {
+        #containerTextCenterOne #rowCards .spaceEntreCards {
           display: block;
           height: 100px;
           background: transparent;
         }
-        .col #cardInformationOne,
-        .col #cardInformationSecond {
+        #containerTextCenterOne #rowCards .col #cardInformationOne,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond {
           margin: 0 auto;
           width: 80%;
           border-radius: 35px;
         }
-        .col #cardInformationOne h5,
-        .col #cardInformationSecond h5 {
+        #containerTextCenterOne #rowCards .col #cardInformationOne h5,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond h5 {
           font-weight: bolder;
           font-size: 35px;
         }
-        .col #cardInformationOne p,
-        .col #cardInformationSecond p {
+        #containerTextCenterOne #rowCards .col #cardInformationOne p,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond p {
           font-size: 25px;
         }
-        .col #cardInformationOne img,
-        .col #cardInformationSecond img {
+        #containerTextCenterOne #rowCards .col #cardInformationOne img,
+        #containerTextCenterOne #rowCards .col #cardInformationSecond img {
           margin-top: 15px;
           height: 100px;
           animation: animaImg 4s ease infinite;
@@ -148,13 +148,19 @@
             transform: scale(1.3);
           }
         }
-        .spaceMeioCard {
+        #containerTextCenterOne #rowCardsModify {
+          display: none;
+        }
+        #containerTextCenterOne .spaceMeioCard {
           height: 80px;
           background: transparent;
         }
         section #containerTextCenterSecond #titleInfoMain {
           font-family: Montserrat;
           margin-top: 50px;
+        }
+        section #containerTextCenterSecond  #imgLogoSerenusColTwo {
+          
         }
         section #containerTextCenterSecond  #imgLogoSerenusColTwo img {
           height: 150px;
@@ -168,10 +174,78 @@
             transform: scale(1.6);
           }
         }
-        .circleMedio1,
-        .spaceParaRowDoContainer2e3,
-        .circleGrande1,
+        #containerTextCenterThree .row #imgMulherContThree img {
+          height: 210px;
+          width: 350px;
+        }
+
+        #containerTextCenterThree #colText1 p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+        }
+
+        #containerTextCenterThree .imagemHomemTexto {
+          height: 210px;
+          width: 350px;
+          margin: 60px 0;
+        }
+
+        #containerTextCenterThree .row #imgHomemContThree img {
+          display: none;
+        }
+
+        #containerTextCenterThree .row #colText2 p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+        }
+
+        #containerTextCenterFour #titleColAutoContFour h1 {
+          font-family: Montserrat;
+          font-weight: bold;
+        }
+
+        #containerTextCenterFour .row.justify-content-md-center #paragrafContFour p {
+          font-size: 20px;
+          width: 400px;
+          margin: 0 auto;
+        }
+
+
+
+
+
+        .spaceParaRowDoContainer2e3 {
+          height: 30px;
+          background: transparent;
+        }
+        
         .spaceParaContainer2e3 {
+          height: 60px;
+          background: transparent;
+        }
+
+        .spaceImgMulherHomem {
+          height: 60px;
+          background: transparent;
+        }
+        
+        .circleMedio1 {
+          height: 150px;
+            width: 80px;
+            position: absolute;
+            right: 0px;
+            background: #A060CE;
+            transform: translateY(-5%);
+            border-top-left-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+            z-index: -1000;
+        }
+    
+
+
+        .circleGrande1 {
           display: none;
         }
       }
@@ -232,106 +306,7 @@
 <div class="spaceHeaderMain"></div>
 
 <main id="main-body">
-  <div class="container text-center" id="containerTextCenterOne">
-    <div class="row">
-      <div class="col">
-        <h3 class="textMain-container">Serenus</h3>
-          <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinhaNone"> Mente, <br class="quebraLinhaNone"></br> Transformando <br class="quebraLinhaNone"> Vidas.
-          <br>
-            <button class="saibaMais">Saiba mais</button>
-          </p>
-      </div>
-      <div class="spaceTextImg"></div>
-      <div class="col" id="divImgZoetwo">
-        <img class="imgZoe" src="./IMG/zoe.png" alt="imagem da Zoe, a mascote do Serenus">
-      </div>
-    </div>
-
-    <!--ORIGINAL-->
-    <div class="row" id="rowCards">
-      <div class="col">
-        <div class="card" id="cardInformationOne">
-          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-          <div class="card-body">
-              <h5 class="card-title">Se Ajudar</h5>
-              <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="spaceEntreCards"></div>
-
-      <div class="col">
-        <div class="card" id="cardInformationSecond">
-          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-          <div class="card-body">
-              <h5 class="card-title">Informações e Artigos Educativos</h5>
-              <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--MODIFICADO-->
-    <div class="row" id="rowCardsModify">
-      <div class="col">
-        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
-          <div class="first-content">
-            <span>
-              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-              <h5 class="card-title">Se Ajudar</h5>
-            </span>
-          </div>
-          <div class="second-content">
-            <span>
-              <div class="card-body">
-                <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
-              </div>
-            </span>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
-          <div class="first-content">
-            <span>
-              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-              <h5 class="card-title">Informações e Artigos Educativos</h5>
-            </span>
-          </div>
-          <div class="second-content">
-            <span>
-              <div class="card-body">
-                <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
-              </div>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
-          <div class="first-content">
-            <span>
-              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
-              <h5 class="card-title">Recursos de auto ajuda</h5>
-            </span>
-          </div>
-          <div class="second-content">
-            <span>
-              <div class="card-body">
-                <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
-              </div>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="spaceMeioCard"></div>
-  </div>
+  
 
   <section>
     <div class="container text-center" id="containerTextCenterSecond">
@@ -362,25 +337,31 @@
 
     <div class="container text-center" id="containerTextCenterThree">
       <div class="row">
-        <div class="col">
+        <div class="col" id="imgMulherContThree">
           <img class="imageMulherTexto" src="./IMG/mulher1.png" alt="imagem de uma mulher sorrindo">
         </div>
-          
-        <div class="col" id="colText1">
+        
+        <div class="spaceImgMulherHomem"></div>
+
+        <div class="col" id="colText1"> 
           <p class="textoPosImagem">A saúde mental é crucial para o bem-estar geral, influenciando pensamentos, sentimentos e ações. Afeta como lidamos com o estresse, nos relacionamos e tomamos decisões. Para uma vida equilibrada, é importante dormir bem, alimentar-se adequadamente, exercitar-se e manter bons relacionamentos. Buscar apoio profissional é essencial para tratar transtornos mentais e melhorar a qualidade de vida.</p>
         </div>
       </div>
         
         <div class="circleGrande2"></div>
         
+      <img class="imagemHomemTexto" src="./IMG/homem.png" alt="imagem de uma mulher sorrindo">  
+
         <div class="spaceEntre2Row"></div>
 
       <div class="row">
-        <div class="col" id="colText2">
+        <div class="col" id="colText2"> 
           <p class="textoPosImagem">Cuidar de si mesmo é essencial para a saúde e o bem-estar. Priorizando o autocuidado, ganhamos energia e resiliência para enfrentar desafios e prevenir doenças físicas e mentais. Práticas simples, como alimentação balanceada, exercícios, sono adequado e relaxamento, fazem grande diferença. Reservar tempo para atividades que trazem alegria melhora a qualidade de vida e nos prepara para ajudar os outros.</p>
         </div>
-          
-        <div class="col">
+        
+        <div class="spaceImgMulherHomem"></div>
+
+        <div class="col" id="imgHomemContThree">
           <img class="imagemHomemTexto" src="./IMG/homem.png" alt="imagem de uma mulher sorrindo">
         </div>
       </div>
@@ -393,7 +374,7 @@
     <div class="container text-center" id="containerTextCenterFour">
       <div class="row justify-content-md-center">
         <div class="col col-lg-2"></div>
-        <div class="col-md-auto">
+        <div class="col-md-auto" id="titleColAutoContFour">
           <h1>Problemas Mentais Mais Comuns no Mundo</h1> 
         </div>
         <div class="col col-lg-2"></div>
@@ -405,7 +386,7 @@
 
       <div class="row justify-content-md-center">
         <div class="col col-lg-2"></div>
-        <div class="col-md-auto">
+        <div class="col-md-auto" id="paragrafContFour">
             <p>A depressão e os transtornos de ansiedade estão entre os distúrbios mentais mais frequentes globalmente. Apesar de serem menos prevalentes, o Transtorno Obsessivo-Compulsivo (TOC), distúrbios alimentares como a anorexia, além do transtorno bipolar e a esquizofrenia, também são condições significativas que afetam a saúde mental.
             </p>
             
@@ -415,6 +396,8 @@
             <p>Além disso, esses transtornos podem piorar com o tempo se não forem tratados e acompanhados. É fundamental estar atento aos seguintes sinais e sintomas:
             </p>
             
+            <br><br><br><br>
+
             <ul>
                 <li>
                     Tristeza persistente;

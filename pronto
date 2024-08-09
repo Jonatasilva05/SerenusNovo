@@ -1,0 +1,98 @@
+<div class="container text-center" id="containerTextCenterOne">
+    <div class="row">
+      <div class="col">
+        <h3 class="textMain-container">Serenus</h3>
+          <p class="textMain-containerP">Sua Paz, Nossa Missão, <br class="quebraLinha"> Cuidando da sua <br class="quebraLinhaNone"> Mente, <br class="quebraLinhaNone"> Transformando <br class="quebraLinhaNone"> Vidas.
+          <br>
+            <button class="saibaMais">Saiba mais</button>
+          </p>
+      </div>
+      <div class="spaceTextImg"></div>
+      <div class="col" id="divImgZoetwo">
+        <img class="imgZoe" src="./IMG/zoe.png" alt="imagem da Zoe, a mascote do Serenus">
+      </div>
+    </div>
+
+    <!--ORIGINAL-->
+    <div class="row" id="rowCards">
+      <div class="col">
+        <div class="card" id="cardInformationOne">
+          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+          <div class="card-body">
+              <h5 class="card-title">Se Ajudar</h5>
+              <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spaceEntreCards"></div>
+
+      <div class="col">
+        <div class="card" id="cardInformationSecond">
+          <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+          <div class="card-body">
+              <h5 class="card-title">Informações e Artigos Educativos</h5>
+              <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODIFICADO-->
+    <div class="row" id="rowCardsModify">
+      <div class="col">
+        <div class="cardMain" id="cardInformationOne" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Se Ajudar</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Colaboração consigo mesmo é muito importante para ter uma saúde boa e melhorar.</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cardMain" id="cardInformationTwo" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Informações e Artigos Educativos</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Artigos e informações para vários transtornos mentais como Depressão, Ansiedade, Burnout e entre outros</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="cardMain" id="cardInformationThree" style="width: 18rem;">
+          <div class="first-content">
+            <span>
+              <img src="./IMG/user.svg" class="card-img-top" alt="icone de um usuário">
+              <h5 class="card-title">Recursos de auto ajuda</h5>
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <div class="card-body">
+                <p class="card-text">Aqui iremos oferecer técnicas de auto ajuda como gerenciar seu estresse, guias de meditação e como melhorar o seu bem-estar.</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spaceMeioCard"></div>
+  </div>
